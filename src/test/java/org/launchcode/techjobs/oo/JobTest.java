@@ -95,12 +95,20 @@ assertEquals(expected,job2.toString());
 
     @Test
     public void testToStringHandlesEmptyField(){
-        Job job2 = new Job("", new Employer(""),
+        Job job2 = new Job("Product tester", new Employer("ACME"),
                 new Location(""),
                 new PositionType(""),
-                new CoreCompetency(""));
+                new CoreCompetency("Persistence"));
+        String expected = System.lineSeparator() +
+                "ID:  _______" + job2.getId() + System.lineSeparator() +
+                "Name: _______" + "Product tester" + System.lineSeparator() +
+                "Employer: _______" + "ACME" + System.lineSeparator() +
+                "Location: _______" + "Data not available" + System.lineSeparator() +
+                "Position Type: _______" + "Data not available" + System.lineSeparator() +
+                "Core Competency: _______" + "Persistence" + System.lineSeparator();
 
-        assertEquals("Data not available",job2.toString());
+        assertEquals(expected,job2.toString());
+
     }
 
 }
