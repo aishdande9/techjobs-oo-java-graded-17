@@ -1,5 +1,7 @@
 package org.launchcode.techjobs.oo;
 
+
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -7,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class JobTest {
-//    //TODO: Create your unit tests here
+    //    //TODO: Create your unit tests here
 //
     @Test
     public void testSettingJobId(){
@@ -63,14 +65,14 @@ public class JobTest {
                 new CoreCompetency("Persistence"));
 
 
-   String expected = System.lineSeparator()+"ID:  _______"+5+System.lineSeparator()+
-        "Name: _______"+"Product tester"+System.lineSeparator()+
-                "Employer: _______"+"ACME"+System.lineSeparator()+
-                "Location: _______"+"Poland"+System.lineSeparator()+
-                "Position Type: _______"+"Quality control"+System.lineSeparator()+
-                "Core Competency: _______"+"Persistence"+System.lineSeparator();
+        String expected = System.lineSeparator()+"ID:  "+5+System.lineSeparator()+
+                "Name: "+"Product tester"+System.lineSeparator()+
+                "Employer: "+"ACME"+System.lineSeparator()+
+                "Location: "+"Poland"+System.lineSeparator()+
+                "Position Type: "+"Quality control"+System.lineSeparator()+
+                "Core Competency: "+"Persistence"+System.lineSeparator();
 
-assertEquals(expected,job2.toString());
+        assertEquals(expected,job2.toString());
 
     }
 
@@ -81,15 +83,15 @@ assertEquals(expected,job2.toString());
                 new PositionType("Quality control"),
                 new CoreCompetency("Persistence"));
 
-        String expected =  System.lineSeparator()+"ID:  _______"+4+System.lineSeparator()+
-                "Name: _______"+"Product tester"+System.lineSeparator()+
-                "Employer: _______"+"ACME"+System.lineSeparator()+
-                "Location: _______"+"Poland"+System.lineSeparator()+
-                "Position Type: _______"+"Quality control"+System.lineSeparator()+
-                "Core Competency: _______"+"Persistence"+System.lineSeparator();
+        String expected =  System.lineSeparator()+"ID:  "+4+System.lineSeparator()+
+                "Name: "+"Product tester"+System.lineSeparator()+
+                "Employer: "+"ACME"+System.lineSeparator()+
+                "Location: "+"Poland"+System.lineSeparator()+
+                "Position Type: "+"Quality control"+System.lineSeparator()+
+                "Core Competency: "+"Persistence"+System.lineSeparator();
 
 
-assertEquals(expected,job2.toString());
+        assertEquals(expected,job2.toString());
 
     }
 
@@ -100,12 +102,12 @@ assertEquals(expected,job2.toString());
                 new PositionType(""),
                 new CoreCompetency("Persistence"));
         String expected = System.lineSeparator() +
-                "ID:  _______" + job2.getId() + System.lineSeparator() +
-                "Name: _______" + "Product tester" + System.lineSeparator() +
-                "Employer: _______" + "ACME" + System.lineSeparator() +
-                "Location: _______" + "Data not available" + System.lineSeparator() +
-                "Position Type: _______" + "Data not available" + System.lineSeparator() +
-                "Core Competency: _______" + "Persistence" + System.lineSeparator();
+                "ID:  " + job2.getId() + System.lineSeparator() +
+                "Name: " + "Product tester" + System.lineSeparator() +
+                "Employer: " + "ACME" + System.lineSeparator() +
+                "Location: " + "Data not available" + System.lineSeparator() +
+                "Position Type: " + "Data not available" + System.lineSeparator() +
+                "Core Competency: " + "Persistence" + System.lineSeparator();
 
         assertEquals(expected,job2.toString());
 

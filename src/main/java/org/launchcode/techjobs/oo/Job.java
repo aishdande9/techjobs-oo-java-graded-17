@@ -13,7 +13,6 @@ public class Job {
     private CoreCompetency coreCompetency;
 
 
-
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
@@ -93,20 +92,20 @@ public class Job {
 
     @Override
     public String toString() {
-        return System.lineSeparator() + "ID:  _______" + getId() + System.lineSeparator() +
-                "Name: _______" + (getName().isEmpty() ? "Data not available" : getName()) + System.lineSeparator() +
-                "Employer: _______" + (getEmployer().getValue().isEmpty() ? "Data not available" : getEmployer().getValue()) + System.lineSeparator() +
-                "Location: _______" + (getLocation().getValue().isEmpty() ? "Data not available" : getLocation().getValue()) + System.lineSeparator() +
-                "Position Type: _______" + (getPositionType().getValue().isEmpty() ? "Data not available" : getPositionType().getValue()) + System.lineSeparator() +
-                "Core Competency: _______" + (getCoreCompetency().getValue().isEmpty() ? "Data not available" : getCoreCompetency().getValue()) + System.lineSeparator();
+        return System.lineSeparator() + "ID:  " + getId() + System.lineSeparator() +
+                "Name: " + (getName().isEmpty() ? "Data not available" : getName()) + System.lineSeparator() +
+                "Employer: " + (getEmployer().getValue().isEmpty() ? "Data not available" : getEmployer().getValue()) + System.lineSeparator() +
+                "Location: " + (getLocation().getValue().isEmpty() ? "Data not available" : getLocation().getValue()) + System.lineSeparator() +
+                "Position Type: " + (getPositionType().getValue().isEmpty() ? "Data not available" : getPositionType().getValue()) + System.lineSeparator() +
+                "Core Competency: " + (getCoreCompetency().getValue().isEmpty() ? "Data not available" : getCoreCompetency().getValue()) + System.lineSeparator();
     }
 }
 
 
-        // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
-        //  match.
+// TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
+//  match.
 
-        // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
-        //  and id.
+// TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
+//  and id.
 
 
